@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
-        - python3 -m venv python3-virtualenv
+        - sudo python3 -m venv python3-virtualenv
         - source python3-virtualenv/bin/activate
         - python3 -m pip install flask
         - export FLASK_ENV = development
