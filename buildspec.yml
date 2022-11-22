@@ -3,7 +3,10 @@ version: 0.2
 phases:
   install:
     commands:
-        - python -m pip install Flask
+        - pip install flask
+        - pip3 install flask
+        - export FLASK_ENV = development
+        - flask run
   build:
     commands:
       - echo Build started on `date`
