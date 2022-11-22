@@ -3,8 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
-        - pip install flask
-        - pip3 install flask
+        - python3 -m pip install flask
         - export FLASK_ENV = development
         - flask run
   build:
